@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-underdash",
-  "description": "Autocomplete for the Underscore.js library.",
+  "description": "Adds Underscore.js methods to autocomplete+ suggestions",
   "author": {
     "name": "Lochlan Bunn",
     "email": "loklaan@gmail.com"
@@ -8,7 +8,6 @@
   "license": "MIT",
   "main": "./lib/main.js",
   "version": "0.0.0",
-  "description": "A short description of your package",
   "scripts": {
     "pull-data": "./node_modules/.bin/_.docsParser --output ./data/underscore-api.json",
     "update": "npm run pull-data"
@@ -26,7 +25,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "fuzzaldrin": "^2.1.0"
+    "fuzzaldrin": "^2.1.0",
+    "underscore-docs-parser": "^1.1.0"
   },
   "providedServices": {
     "autocomplete.provider": {
