@@ -1,0 +1,1137 @@
+[
+  {
+    "name": "each",
+    "url": "http://underscorejs.org/#each",
+    "aliases": [
+      "forEach"
+    ],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Iterates over a list of elements, yielding each in turn to an iteratee function. The iteratee is bound to the context object, if one is passed. Each invocation of iteratee is called with three arguments:(element, index, list). If list is a JavaScript object, iteratee's arguments will be (value, key, list). Returns the list for chaining."
+  },
+  {
+    "name": "map",
+    "url": "http://underscorejs.org/#map",
+    "aliases": [
+      "collect"
+    ],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Produces a new array of values by mapping each value in list through a transformation function (iteratee). The iteratee is passed three arguments: the value, then the index (or key) of the iteration, and finally a reference to the entire list."
+  },
+  {
+    "name": "reduce",
+    "url": "http://underscorejs.org/#reduce",
+    "aliases": [
+      "Aliases: inject",
+      "foldl"
+    ],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[memo]",
+      "[context]"
+    ],
+    "description": "Also known as inject and foldl, reduce boils down a list of values into a single value.Memo is the initial state of the reduction, and each successive step of it should be returned by iteratee. The iteratee is passed four arguments: the memo, then the value and index (or key) of the iteration, and finally a reference to the entire list.\nIf no memo is passed to the initial invocation of reduce, the iteratee is not invoked on the first element of the list. The first element is instead passed as the memo in the invocation of the iteratee on the next element in the list."
+  },
+  {
+    "name": "reduceRight",
+    "url": "http://underscorejs.org/#reduceRight",
+    "aliases": [
+      "foldr"
+    ],
+    "arguments": [
+      "list",
+      "iteratee",
+      "memo",
+      "[context]"
+    ],
+    "description": "The right-associative version of reduce. Foldr is not as useful in JavaScript as it would be in a language with lazy evaluation."
+  },
+  {
+    "name": "find",
+    "url": "http://underscorejs.org/#find",
+    "aliases": [
+      "detect"
+    ],
+    "arguments": [
+      "list",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list."
+  },
+  {
+    "name": "filter",
+    "url": "http://underscorejs.org/#filter",
+    "aliases": [
+      "select"
+    ],
+    "arguments": [
+      "list",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Looks through each value in the list, returning an array of all the values that pass a truth test (predicate)."
+  },
+  {
+    "name": "where",
+    "url": "http://underscorejs.org/#where",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "properties"
+    ],
+    "description": "Looks through each value in the list, returning an array of all the values that contain all of the key-value pairs listed in properties."
+  },
+  {
+    "name": "findWhere",
+    "url": "http://underscorejs.org/#findWhere",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "properties"
+    ],
+    "description": "Looks through the list and returns the first value that matches all of the key-value pairs listed in properties.\nIf no match is found, or if list is empty, undefined will be returned."
+  },
+  {
+    "name": "reject",
+    "url": "http://underscorejs.org/#reject",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Returns the values in list without the elements that the truth test (predicate) passes. The opposite of filter."
+  },
+  {
+    "name": "every",
+    "url": "http://underscorejs.org/#every",
+    "aliases": [
+      "all"
+    ],
+    "arguments": [
+      "list",
+      "[predicate]",
+      "[context]"
+    ],
+    "description": "Returns true if all of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a false element is found."
+  },
+  {
+    "name": "some",
+    "url": "http://underscorejs.org/#some",
+    "aliases": [
+      "any"
+    ],
+    "arguments": [
+      "list",
+      "[predicate]",
+      "[context]"
+    ],
+    "description": "Returns true if any of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a true element is found."
+  },
+  {
+    "name": "contains",
+    "url": "http://underscorejs.org/#contains",
+    "aliases": [
+      "includes"
+    ],
+    "arguments": [
+      "list",
+      "value",
+      "[fromIndex]"
+    ],
+    "description": "Returns true if the value is present in the list.Uses indexOf internally, if list is an Array.Use fromIndex to start your search at a given index."
+  },
+  {
+    "name": "invoke",
+    "url": "http://underscorejs.org/#invoke",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "methodName",
+      "*arguments"
+    ],
+    "description": "Calls the method named by methodName on each value in the list.Any extra arguments passed to invoke will be forwarded on to the method invocation."
+  },
+  {
+    "name": "pluck",
+    "url": "http://underscorejs.org/#pluck",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "propertyName"
+    ],
+    "description": "A convenient version of what is perhaps the most common use-case for map: extracting a list of property values."
+  },
+  {
+    "name": "max",
+    "url": "http://underscorejs.org/#max",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "[iteratee]",
+      "[context]"
+    ],
+    "description": "Returns the maximum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. -Infinity is returned if list is empty, so an isEmpty guard may be required."
+  },
+  {
+    "name": "min",
+    "url": "http://underscorejs.org/#min",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "[iteratee]",
+      "[context]"
+    ],
+    "description": "Returns the minimum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. Infinity is returned if list is empty, so an isEmpty guard may be required."
+  },
+  {
+    "name": "sortBy",
+    "url": "http://underscorejs.org/#sortBy",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Returns a (stably) sorted copy of list, ranked in ascending order by the results of running each value through iteratee.iteratee may also be the string name of the property to sort by (eg.length)."
+  },
+  {
+    "name": "groupBy",
+    "url": "http://underscorejs.org/#groupBy",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Splits a collection into sets, grouped by the result of running each value through iteratee. If iteratee is a string instead of a function, groups by the property named by iteratee on each of the values."
+  },
+  {
+    "name": "indexBy",
+    "url": "http://underscorejs.org/#indexBy",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Given a list, and an iteratee function that returns a key for each element in the list (or a property name),returns an object with an index of each item.Just like groupBy, but for when you know your keys are unique."
+  },
+  {
+    "name": "countBy",
+    "url": "http://underscorejs.org/#countBy",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Sorts a list into groups and returns a count for the number of objects in each group.Similar to groupBy, but instead of returning a list of values,returns a count for the number of values in that group."
+  },
+  {
+    "name": "shuffle",
+    "url": "http://underscorejs.org/#shuffle",
+    "aliases": [],
+    "arguments": [
+      "list"
+    ],
+    "description": "Returns a shuffled copy of the list, using a version of the Fisher-Yates shuffle."
+  },
+  {
+    "name": "sample",
+    "url": "http://underscorejs.org/#sample",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "[n]"
+    ],
+    "description": "Produce a random sample from the list. Pass a number to return n random elements from the list. Otherwise a single random item will be returned."
+  },
+  {
+    "name": "toArray",
+    "url": "http://underscorejs.org/#toArray",
+    "aliases": [],
+    "arguments": [
+      "list"
+    ],
+    "description": "Creates a real Array from the list (anything that can be iterated over).  Useful for transmuting the arguments object."
+  },
+  {
+    "name": "size",
+    "url": "http://underscorejs.org/#size",
+    "aliases": [],
+    "arguments": [
+      "list"
+    ],
+    "description": "Return the number of values in the list."
+  },
+  {
+    "name": "partition",
+    "url": "http://underscorejs.org/#partition",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "predicate"
+    ],
+    "description": "Split array into two arrays: one whose elements all satisfy predicate and one whose elements all do not satisfy predicate."
+  },
+  {
+    "name": "first",
+    "url": "http://underscorejs.org/#first",
+    "aliases": [
+      "head",
+      "take"
+    ],
+    "arguments": [
+      "array",
+      "[n]"
+    ],
+    "description": "Returns the first element of an array. Passing n will return the first n elements of the array."
+  },
+  {
+    "name": "initial",
+    "url": "http://underscorejs.org/#initial",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "[n]"
+    ],
+    "description": "Returns everything but the last entry of the array. Especially useful on the arguments object. Pass n to exclude the last n elements from the result."
+  },
+  {
+    "name": "last",
+    "url": "http://underscorejs.org/#last",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "[n]"
+    ],
+    "description": "Returns the last element of an array. Passing n will return the last n elements of the array."
+  },
+  {
+    "name": "rest",
+    "url": "http://underscorejs.org/#rest",
+    "aliases": [
+      "tail",
+      "drop"
+    ],
+    "arguments": [
+      "array",
+      "[index]"
+    ],
+    "description": "Returns the rest of the elements in an array. Pass an index to return the values of the array from that index onward."
+  },
+  {
+    "name": "compact",
+    "url": "http://underscorejs.org/#compact",
+    "aliases": [],
+    "arguments": [
+      "array"
+    ],
+    "description": "Returns a copy of the array with all falsy values removed.In JavaScript, false, null, 0, \"\",undefined and NaN are all falsy."
+  },
+  {
+    "name": "flatten",
+    "url": "http://underscorejs.org/#flatten",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "[shallow]"
+    ],
+    "description": "Flattens a nested array (the nesting can be to any depth). If you pass shallow, the array will only be flattened a single level."
+  },
+  {
+    "name": "without",
+    "url": "http://underscorejs.org/#without",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "*values"
+    ],
+    "description": "Returns a copy of the array with all instances of the values removed."
+  },
+  {
+    "name": "union",
+    "url": "http://underscorejs.org/#union",
+    "aliases": [],
+    "arguments": [
+      "*arrays"
+    ],
+    "description": "Computes the union of the passed-in arrays: the list of unique items,in order, that are present in one or more of the arrays."
+  },
+  {
+    "name": "intersection",
+    "url": "http://underscorejs.org/#intersection",
+    "aliases": [],
+    "arguments": [
+      "*arrays"
+    ],
+    "description": "Computes the list of values that are the intersection of all the arrays.Each value in the result is present in each of the arrays."
+  },
+  {
+    "name": "difference",
+    "url": "http://underscorejs.org/#difference",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "*others"
+    ],
+    "description": "Similar to without, but returns the values from array that are not present in the other arrays."
+  },
+  {
+    "name": "uniq",
+    "url": "http://underscorejs.org/#uniq",
+    "aliases": [
+      "unique"
+    ],
+    "arguments": [
+      "array",
+      "[isSorted]",
+      "[iteratee]"
+    ],
+    "description": "Produces a duplicate-free version of the array, using === to test object equality. In particular only the first occurence of each value is kept.If you know in advance that the array is sorted,passing true for isSorted will run a much faster algorithm.If you want to compute unique items based on a transformation, pass an iteratee function."
+  },
+  {
+    "name": "zip",
+    "url": "http://underscorejs.org/#zip",
+    "aliases": [],
+    "arguments": [
+      "*arrays"
+    ],
+    "description": "Merges together the values of each of the arrays with the values at the corresponding position. Useful when you have separate data sources that are coordinated through matching array indexes.Use with apply to pass in an array of arrays.If you're working with a matrix of nested arrays, this can be used to transpose the matrix."
+  },
+  {
+    "name": "unzip",
+    "url": "http://underscorejs.org/#unzip",
+    "aliases": [],
+    "arguments": [
+      "array"
+    ],
+    "description": "The opposite of zip. Given an array of arrays, returns a series of new arrays, the first of which contains all of the first elements in the input arrays, the second of which contains all of the second elements,and so on."
+  },
+  {
+    "name": "object",
+    "url": "http://underscorejs.org/#object",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "[values]"
+    ],
+    "description": "Converts arrays into objects. Pass either a single list of [key, value] pairs, or a list of keys, and a list of values.If duplicate keys exist, the last value wins."
+  },
+  {
+    "name": "indexOf",
+    "url": "http://underscorejs.org/#indexOf",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "value",
+      "[isSorted]"
+    ],
+    "description": "Returns the index at which value can be found in the array,or -1 if value is not present in the array. If you're working with a large array, and you know that the array is already sorted, pass true for isSorted to use a faster binary search ... or, pass a number as the third argument in order to look for the first matching value in the array after the given index."
+  },
+  {
+    "name": "lastIndexOf",
+    "url": "http://underscorejs.org/#lastIndexOf",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "value",
+      "[fromIndex]"
+    ],
+    "description": "Returns the index of the last occurrence of value in the array,or -1 if value is not present. Pass fromIndex to start your search at a given index."
+  },
+  {
+    "name": "sortedIndex",
+    "url": "http://underscorejs.org/#sortedIndex",
+    "aliases": [],
+    "arguments": [
+      "list",
+      "value",
+      "[iteratee]",
+      "[context]"
+    ],
+    "description": "Uses a binary search to determine the index at which the value should be inserted into the list in order to maintain the list's sorted order. If an iteratee function is provided, it will be used to compute the sort ranking of each value, including the value you pass.The iteratee may also be the string name of the property to sort by (eg. length)."
+  },
+  {
+    "name": "findIndex",
+    "url": "http://underscorejs.org/#findIndex",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Similar to _.indexOf, returns the first index where the predicate truth test passes; otherwise returns -1."
+  },
+  {
+    "name": "findLastIndex",
+    "url": "http://underscorejs.org/#findLastIndex",
+    "aliases": [],
+    "arguments": [
+      "array",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Like _.findIndex but iterates the array in reverse,returning the index closest to the end where the predicate truth test passes."
+  },
+  {
+    "name": "range",
+    "url": "http://underscorejs.org/#range",
+    "aliases": [],
+    "arguments": [
+      "[start]",
+      "stop",
+      "[step]"
+    ],
+    "description": "A function to create flexibly-numbered lists of integers, handy for each and map loops. start, if omitted, defaults to 0; step defaults to 1. Returns a list of integers from start (inclusive) to stop (exclusive), incremented (or decremented) by step,exclusive. Note that ranges that stop before they start are considered to be zero-length instead of negative — if you'd like a negative range, use a negative step."
+  },
+  {
+    "name": "bind",
+    "url": "http://underscorejs.org/#bind",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "object",
+      "*arguments"
+    ],
+    "description": "Bind a function to an object, meaning that whenever the function is called, the value of this will be the object.Optionally, pass arguments to the function to pre-fill them,also known as partial application. For partial application without context binding, use partial."
+  },
+  {
+    "name": "bindAll",
+    "url": "http://underscorejs.org/#bindAll",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "*methodNames"
+    ],
+    "description": "Binds a number of methods on the object, specified by methodNames, to be run in the context of that object whenever they are invoked. Very handy for binding functions that are going to be used as event handlers, which would otherwise be invoked with a fairly useless this. methodNames are required."
+  },
+  {
+    "name": "partial",
+    "url": "http://underscorejs.org/#partial",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "*arguments"
+    ],
+    "description": "Partially apply a function by filling in any number of its arguments,without changing its dynamic this value. A close cousin of bind. You may pass _ in your list of arguments to specify an argument that should not be pre-filled, but left open to supply at call-time."
+  },
+  {
+    "name": "memoize",
+    "url": "http://underscorejs.org/#memoize",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "[hashFunction]"
+    ],
+    "description": "Memoizes a given function by caching the computed result. Useful for speeding up slow-running computations. If passed an optional hashFunction, it will be used to compute the hash key for storing the result, based on the arguments to the original function. The default hashFunction just uses the first argument to the memoized function as the key. The cache of memoized values is available as the cache property on the returned function."
+  },
+  {
+    "name": "delay",
+    "url": "http://underscorejs.org/#delay",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "wait",
+      "*arguments"
+    ],
+    "description": "Much like setTimeout, invokes function after wait milliseconds. If you pass the optional arguments, they will be forwarded on to the function when it is invoked."
+  },
+  {
+    "name": "defer",
+    "url": "http://underscorejs.org/#defer",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "*arguments"
+    ],
+    "description": "Defers invoking the function until the current call stack has cleared,similar to using setTimeout with a delay of 0. Useful for performing expensive computations or HTML rendering in chunks without blocking the UI thread from updating. If you pass the optional arguments, they will be forwarded on to the function when it is invoked."
+  },
+  {
+    "name": "throttle",
+    "url": "http://underscorejs.org/#throttle",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "wait",
+      "[options]"
+    ],
+    "description": "Creates and returns a new, throttled version of the passed function,that, when invoked repeatedly, will only actually call the original function at most once per every wait milliseconds. Useful for rate-limiting events that occur faster than you can keep up with.\nBy default, throttle will execute the function as soon as you call it for the first time, and, if you call it again any number of times during the wait period, as soon as that period is over.If you'd like to disable the leading-edge call, pass {leading: false}, and if you'd like to disable the execution on the trailing-edge, pass  {trailing: false}."
+  },
+  {
+    "name": "debounce",
+    "url": "http://underscorejs.org/#debounce",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "wait",
+      "[immediate]"
+    ],
+    "description": "Creates and returns a new debounced version of the passed function which will postpone its execution until after wait milliseconds have elapsed since the last time it was invoked. Useful for implementing behavior that should only happen after the input has stopped arriving. For example: rendering a preview of a Markdown comment, recalculating a layout after the window has stopped being resized, and so on.\nPass true for the immediate argument to cause debounce to trigger the function on the leading instead of the trailing edge of the wait interval. Useful in circumstances like preventing accidental double-clicks on a \"submit\" button from firing a second time."
+  },
+  {
+    "name": "once",
+    "url": "http://underscorejs.org/#once",
+    "aliases": [],
+    "arguments": [
+      "function"
+    ],
+    "description": "Creates a version of the function that can only be called one time.Repeated calls to the modified function will have no effect, returning the value from the original call. Useful for initialization functions,instead of having to set a boolean flag and then check it later."
+  },
+  {
+    "name": "after",
+    "url": "http://underscorejs.org/#after",
+    "aliases": [],
+    "arguments": [
+      "count",
+      "function"
+    ],
+    "description": "Creates a version of the function that will only be run after first being called count times. Useful for grouping asynchronous responses,where you want to be sure that all the async calls have finished, before proceeding."
+  },
+  {
+    "name": "before",
+    "url": "http://underscorejs.org/#before",
+    "aliases": [],
+    "arguments": [
+      "count",
+      "function"
+    ],
+    "description": "Creates a version of the function that can be called no more than count times. The result of the last function call is memoized and returned when count has been reached."
+  },
+  {
+    "name": "wrap",
+    "url": "http://underscorejs.org/#wrap",
+    "aliases": [],
+    "arguments": [
+      "function",
+      "wrapper"
+    ],
+    "description": "Wraps the first function inside of the wrapper function,passing it as the first argument. This allows the wrapper to execute code before and after the function runs, adjust the arguments,and execute it conditionally."
+  },
+  {
+    "name": "negate",
+    "url": "http://underscorejs.org/#negate",
+    "aliases": [],
+    "arguments": [
+      "predicate"
+    ],
+    "description": "Returns a new negated version of the predicate function."
+  },
+  {
+    "name": "compose",
+    "url": "http://underscorejs.org/#compose",
+    "aliases": [],
+    "arguments": [
+      "*functions"
+    ],
+    "description": "Returns the composition of a list of functions, where each function consumes the return value of the function that follows. In math terms,composing the functions f(), g(), and h() produces f(g(h()))."
+  },
+  {
+    "name": "keys",
+    "url": "http://underscorejs.org/#keys",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Retrieve all the names of the object's own enumerable properties."
+  },
+  {
+    "name": "allKeys",
+    "url": "http://underscorejs.org/#allKeys",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Retrieve all the names of object's own and inherited properties."
+  },
+  {
+    "name": "values",
+    "url": "http://underscorejs.org/#values",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Return all of the values of the object's own properties."
+  },
+  {
+    "name": "mapObject",
+    "url": "http://underscorejs.org/#mapObject",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Like map, but for objects. Transform the value of each property in turn."
+  },
+  {
+    "name": "pairs",
+    "url": "http://underscorejs.org/#pairs",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Convert an object into a list of [key, value] pairs."
+  },
+  {
+    "name": "invert",
+    "url": "http://underscorejs.org/#invert",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns a copy of the object where the keys have become the values and the values the keys. For this to work, all of your object's values should be unique and string serializable."
+  },
+  {
+    "name": "create",
+    "url": "http://underscorejs.org/#create",
+    "aliases": [],
+    "arguments": [
+      "prototype",
+      "props"
+    ],
+    "description": "Creates a new object with the given prototype, optionally attaching props as own properties. Basically, Object.create,but without all of the property descriptor jazz."
+  },
+  {
+    "name": "functions",
+    "url": "http://underscorejs.org/#object-functions",
+    "aliases": [
+      "methods"
+    ],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns a sorted list of the names of every method in an object —that is to say, the name of every function property of the object."
+  },
+  {
+    "name": "findKey",
+    "url": "http://underscorejs.org/#findKey",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "predicate",
+      "[context]"
+    ],
+    "description": "Similar to _.findIndex but for keys in objects.Returns the key where the predicate truth test passes or undefined.\nextend_.extend(destination, *sources)Copy all of the properties in the source objects over to the destination object, and return the destination object.It's in-order, so the last source will override properties of the same name in previous arguments."
+  },
+  {
+    "name": "extend",
+    "url": "http://underscorejs.org/#extend",
+    "aliases": [],
+    "arguments": [
+      "destination",
+      "*sources"
+    ],
+    "description": "Copy all of the properties in the source objects over to the destination object, and return the destination object.It's in-order, so the last source will override properties of the same name in previous arguments."
+  },
+  {
+    "name": "extendOwn",
+    "url": "http://underscorejs.org/#extendOwn",
+    "aliases": [
+      "assign"
+    ],
+    "arguments": [
+      "destination",
+      "*sources"
+    ],
+    "description": "Like extend, but only copies own properties over to the destination object.\npick_.pick(object, *keys)Return a copy of the object, filtered to only have values for the whitelisted keys (or array of valid keys).  Alternatively accepts a predicate indicating which keys to pick."
+  },
+  {
+    "name": "pick",
+    "url": "http://underscorejs.org/#pick",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "*keys"
+    ],
+    "description": "Return a copy of the object, filtered to only have values for the whitelisted keys (or array of valid keys).  Alternatively accepts a predicate indicating which keys to pick."
+  },
+  {
+    "name": "omit",
+    "url": "http://underscorejs.org/#omit",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "*keys"
+    ],
+    "description": "Return a copy of the object, filtered to omit the blacklisted keys (or array of keys).  Alternatively accepts a predicate indicating which keys to omit."
+  },
+  {
+    "name": "defaults",
+    "url": "http://underscorejs.org/#defaults",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "*defaults"
+    ],
+    "description": "Fill in undefined properties in object with the first value present in the following list of defaults objects."
+  },
+  {
+    "name": "clone",
+    "url": "http://underscorejs.org/#clone",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Create a shallow-copied clone of the provided plain object.Any nested objects or arrays will be copied by reference, not duplicated."
+  },
+  {
+    "name": "tap",
+    "url": "http://underscorejs.org/#tap",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "interceptor"
+    ],
+    "description": "Invokes interceptor with the object, and then returns object.The primary purpose of this method is to \"tap into\" a method chain, in order to perform operations on intermediate results within the chain."
+  },
+  {
+    "name": "has",
+    "url": "http://underscorejs.org/#has",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "key"
+    ],
+    "description": "Does the object contain the given key? Identical to object.hasOwnProperty(key), but uses a safe reference to the hasOwnProperty function, in case it's been overridden accidentally."
+  },
+  {
+    "name": "property",
+    "url": "http://underscorejs.org/#property",
+    "aliases": [],
+    "arguments": [
+      "key"
+    ],
+    "description": "Returns a function that will itself return the key property of any passed-in object."
+  },
+  {
+    "name": "propertyOf",
+    "url": "http://underscorejs.org/#propertyOf",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Inverse of _.property. Takes an object and returns a function which will return the value of a provided property."
+  },
+  {
+    "name": "matcher",
+    "url": "http://underscorejs.org/#matcher",
+    "aliases": [
+      "matches"
+    ],
+    "arguments": [
+      "attrs"
+    ],
+    "description": "Returns a predicate function that will tell you if a passed in object contains all of the key/value properties present in attrs."
+  },
+  {
+    "name": "isEqual",
+    "url": "http://underscorejs.org/#isEqual",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "other"
+    ],
+    "description": "Performs an optimized deep comparison between the two objects, to determine if they should be considered equal."
+  },
+  {
+    "name": "isMatch",
+    "url": "http://underscorejs.org/#isMatch",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "properties"
+    ],
+    "description": "Tells you if the keys and values in properties are contained in object."
+  },
+  {
+    "name": "isEmpty",
+    "url": "http://underscorejs.org/#isEmpty",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if an enumerable object contains no values (no enumerable own-properties). For strings and array-like objects _.isEmpty checks if the length property is 0."
+  },
+  {
+    "name": "isElement",
+    "url": "http://underscorejs.org/#isElement",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a DOM element."
+  },
+  {
+    "name": "isArray",
+    "url": "http://underscorejs.org/#isArray",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is an Array."
+  },
+  {
+    "name": "isObject",
+    "url": "http://underscorejs.org/#isObject",
+    "aliases": [],
+    "arguments": [
+      "value"
+    ],
+    "description": "Returns true if value is an Object. Note that JavaScript arrays and functions are objects, while (normal) strings and numbers are not."
+  },
+  {
+    "name": "isArguments",
+    "url": "http://underscorejs.org/#isArguments",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is an Arguments object."
+  },
+  {
+    "name": "isFunction",
+    "url": "http://underscorejs.org/#isFunction",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a Function."
+  },
+  {
+    "name": "isString",
+    "url": "http://underscorejs.org/#isString",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a String."
+  },
+  {
+    "name": "isNumber",
+    "url": "http://underscorejs.org/#isNumber",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a Number (including NaN)."
+  },
+  {
+    "name": "isFinite",
+    "url": "http://underscorejs.org/#isFinite",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a finite Number."
+  },
+  {
+    "name": "isBoolean",
+    "url": "http://underscorejs.org/#isBoolean",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is either true or false."
+  },
+  {
+    "name": "isDate",
+    "url": "http://underscorejs.org/#isDate",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a Date."
+  },
+  {
+    "name": "isRegExp",
+    "url": "http://underscorejs.org/#isRegExp",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is a RegExp."
+  },
+  {
+    "name": "isError",
+    "url": "http://underscorejs.org/#isError",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object inherits from an Error."
+  },
+  {
+    "name": "isNaN",
+    "url": "http://underscorejs.org/#isNaN",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if object is NaN. Note: this is not the same as the native isNaN function, which will also return true for many other not-number values, such as undefined."
+  },
+  {
+    "name": "isNull",
+    "url": "http://underscorejs.org/#isNull",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Returns true if the value of object is null."
+  },
+  {
+    "name": "isUndefined",
+    "url": "http://underscorejs.org/#isUndefined",
+    "aliases": [],
+    "arguments": [
+      "value"
+    ],
+    "description": "Returns true if value is undefined."
+  },
+  {
+    "name": "noConflict",
+    "url": "http://underscorejs.org/#noConflict",
+    "aliases": [],
+    "arguments": [],
+    "description": "Give control of the _ variable back to its previous owner. Returns a reference to the Underscore object."
+  },
+  {
+    "name": "identity",
+    "url": "http://underscorejs.org/#identity",
+    "aliases": [],
+    "arguments": [
+      "value"
+    ],
+    "description": "Returns the same value that is used as the argument. In math:f(x) = x This function looks useless, but is used throughout Underscore as a default iteratee."
+  },
+  {
+    "name": "constant",
+    "url": "http://underscorejs.org/#constant",
+    "aliases": [],
+    "arguments": [
+      "value"
+    ],
+    "description": "Creates a function that returns the same value that is used as the argument of _.constant."
+  },
+  {
+    "name": "noop",
+    "url": "http://underscorejs.org/#noop",
+    "aliases": [],
+    "arguments": [],
+    "description": "Returns undefined irrespective of the arguments passed to it.Useful as the default for optional callback arguments."
+  },
+  {
+    "name": "times",
+    "url": "http://underscorejs.org/#times",
+    "aliases": [],
+    "arguments": [
+      "n",
+      "iteratee",
+      "[context]"
+    ],
+    "description": "Invokes the given iteratee function n times. Each invocation of iteratee is called with an index argument. Produces an array of the returned values.Note: this example uses the chaining syntax."
+  },
+  {
+    "name": "random",
+    "url": "http://underscorejs.org/#random",
+    "aliases": [],
+    "arguments": [
+      "min",
+      "max"
+    ],
+    "description": "Returns a random integer between min and max, inclusive.If you only pass one argument, it will return a number between 0 and that number."
+  },
+  {
+    "name": "mixin",
+    "url": "http://underscorejs.org/#mixin",
+    "aliases": [],
+    "arguments": [
+      "object"
+    ],
+    "description": "Allows you to extend Underscore with your own utility functions. Pass a hash of {name: function} definitions to have your functions added to the Underscore object, as well as the OOP wrapper."
+  },
+  {
+    "name": "iteratee",
+    "url": "http://underscorejs.org/#iteratee",
+    "aliases": [],
+    "arguments": [
+      "value",
+      "[context]"
+    ],
+    "description": "A mostly-internal function to generate callbacks that can be applied to each element in a collection, returning the desired result — either identity, an arbitrary callback, a property matcher, or a property accessor.The full list of Underscore methods that transform predicates through _.iteratee is map, find,filter, reject, every, some, max,min, sortBy, groupBy, indexBy,countBy, sortedIndex, partition, and unique."
+  },
+  {
+    "name": "uniqueId",
+    "url": "http://underscorejs.org/#uniqueId",
+    "aliases": [],
+    "arguments": [
+      "[prefix]"
+    ],
+    "description": "Generate a globally-unique id for client-side models or DOM elements that need one. If prefix is passed, the id will be appended to it."
+  },
+  {
+    "name": "escape",
+    "url": "http://underscorejs.org/#escape",
+    "aliases": [],
+    "arguments": [
+      "string"
+    ],
+    "description": "Escapes a string for insertion into HTML, replacing &, <, >, \", `, and ' characters."
+  },
+  {
+    "name": "unescape",
+    "url": "http://underscorejs.org/#unescape",
+    "aliases": [],
+    "arguments": [
+      "string"
+    ],
+    "description": "The opposite of escape, replaces &amp;, &lt;, &gt;,&quot;, &#96; and &#x27;with their unescaped counterparts."
+  },
+  {
+    "name": "result",
+    "url": "http://underscorejs.org/#result",
+    "aliases": [],
+    "arguments": [
+      "object",
+      "property",
+      "[defaultValue]"
+    ],
+    "description": "If the value of the named property is a function then invoke it with the object as context; otherwise, return it. If a default value is provided and the property doesn't exist or is undefined then the default will be returned. If defaultValue is a function its result will be returned."
+  },
+  {
+    "name": "now",
+    "url": "http://underscorejs.org/#now",
+    "aliases": [],
+    "arguments": [],
+    "description": "Returns an integer timestamp for the current time, using the fastest method available in the runtime. Useful for implementing timing/animation functions."
+  },
+  {
+    "name": "template",
+    "url": "http://underscorejs.org/#template",
+    "aliases": [],
+    "arguments": [
+      "templateString",
+      "[settings]"
+    ],
+    "description": "Compiles JavaScript templates into functions that can be evaluated for rendering. Useful for rendering complicated bits of HTML from JSON data sources. Template functions can both interpolate values, using <%= … %>, as well as execute arbitrary JavaScript code, with <% … %>. If you wish to interpolate a value, and have it be HTML-escaped, use <%- … %>. When you evaluate a template function, pass in a data object that has properties corresponding to the template's free variables. The settings argument should be a hash containing any _.templateSettings that should be overridden."
+  },
+  {
+    "name": "chain",
+    "url": "http://underscorejs.org/#chain",
+    "aliases": [],
+    "arguments": [
+      "obj"
+    ],
+    "description": "Returns a wrapped object. Calling methods on this object will continue to return wrapped objects until value is called."
+  }
+]

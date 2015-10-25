@@ -1,0 +1,38 @@
+{
+  "name": "autocomplete-underdash",
+  "description": "Autocomplete for the Underscore.js library.",
+  "author": {
+    "name": "Lochlan Bunn",
+    "email": "loklaan@gmail.com"
+  },
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "scripts": {
+    "pull-data": "./node_modules/.bin/_.docsParser --output ./data/underscore-api.json",
+    "update": "npm run pull-data"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loklaan/autocomplete-underdash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loklaan/autocomplete-underdash/issues"
+  },
+  "homepage": "https://github.com/loklaan/autocomplete-underdash/#readme",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "fuzzaldrin": "^2.1.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  }
+}
