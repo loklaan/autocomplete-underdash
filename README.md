@@ -8,3 +8,7 @@ Adds Underscore.js methods to autocomplete+ suggestions
 
 * Add [lodash](https://lodash.com/docs), living up to the package name
 * Support configuring custom [mixins](http://underscorejs.org/#mixin)
+
+## Constributions
+
+Feel free to open a PR! I'll get around to reading it asap.
