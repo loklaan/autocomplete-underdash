@@ -1,14 +1,15 @@
 # Autocomplete Underdash
 
-Adds Underscore.js methods to autocomplete+ suggestions
+Adds Underscore.js methods to [Atom](http://atom.io/) autocomplete+ suggestions.
 
-![screen](https://i.imgur.com/MiWjuNk.png)
+![underscore suggestions](https://i.imgur.com/vg579Cf.png)
 
 ## Planned
 
 * Add [lodash](https://lodash.com/docs), living up to the package name
 * Support configuring custom [mixins](http://underscorejs.org/#mixin)
+* Support selecting different documentation versions (lib@release)
 
-## Constributions
+## Contributions
 
-Feel free to open a PR! I'll get around to reading it asap.
+Feel free to open a PR! I'll get around to reading it.
