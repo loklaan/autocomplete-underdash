@@ -29,7 +29,7 @@
     "name": "reduce",
     "url": "http://underscorejs.org/#reduce",
     "aliases": [
-      "Aliases: inject",
+      "inject",
       "foldl"
     ],
     "arguments": [
