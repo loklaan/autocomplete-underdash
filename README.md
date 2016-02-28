@@ -1,4 +1,4 @@
-# Autocomplete Underdash [![apm](https://img.shields.io/badge/atom.io-get%20me-brightgreen.svg?style=flat-square)](https://atom.io/packages/autocomplete-underdash)
+# Autocomplete Underdash [![apm](https://img.shields.io/apm/v/autocomplete-underdash.svg)](https://atom.io/packages/autocomplete-underdash)
 
 Adds Underscore.js methods to [Atom](http://atom.io/) autocomplete+ suggestions.
 
