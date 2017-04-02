@@ -1,5 +1,7 @@
 # Autocomplete Underdash [![apm](https://img.shields.io/apm/v/autocomplete-underdash.svg)](https://atom.io/packages/autocomplete-underdash)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/loklaan/autocomplete-underdash.svg)](https://greenkeeper.io/)
+
 Adds Underscore.js methods to [Atom](http://atom.io/) autocomplete+ suggestions.
 
 ![underscore suggestions](https://i.imgur.com/vg579Cf.png)
